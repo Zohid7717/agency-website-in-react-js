@@ -1,0 +1,17 @@
+.header{
+  position: fixed;
+  margin-top: 0px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  top: 0;
+  left: 0;
+
+  &__wrapper{
+    border: 1px solid ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 0;
+  }
+}

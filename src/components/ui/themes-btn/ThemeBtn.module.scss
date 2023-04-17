@@ -1,0 +1,17 @@
+.themebtn {
+  display: flex;
+  padding: 2px;
+  border: 1px solid #AAAAAA;
+  border-radius: 40px;
+  font-size: 21px;
+  gap: 12px;
+  &__light,
+  &__dark{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6.75px;
+    color: var(--text-color-dark);
+  }
+}

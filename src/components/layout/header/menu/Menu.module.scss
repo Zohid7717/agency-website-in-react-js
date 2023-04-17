@@ -1,0 +1,27 @@
+.menu {
+  display: flex;
+
+&__burger_control{
+  display: none;
+}
+  &__items {
+    display: flex;
+    gap: 18px;
+  }
+
+  a {
+      font-family: 'Proxima Nova Bold';
+      font-size: 20px;
+      line-height: 24px;
+      color: var(--text-color-dark);
+      transition: 0.3s ease-in-out;
+
+      &:hover {
+        color: #54a5d4;
+      }
+
+      &:active {
+        color: #5454D4;
+      }
+    }
+}

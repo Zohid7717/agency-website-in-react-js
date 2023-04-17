@@ -1,0 +1,17 @@
+.logo {
+  cursor: pointer;
+  font-family: 'Banana Brick';
+  color: var(--text-color-dark);
+  font-size: 32px;
+  line-height: 39px;
+  transition: 0.3s ease-in-out;
+  font-family: 'Banana Brick';
+
+  &:hover {
+    color: #54a5d4;
+  }
+
+  &:active {
+    color: #5454D4;
+  }
+}

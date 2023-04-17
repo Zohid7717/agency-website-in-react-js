@@ -1,0 +1,76 @@
+@import "_nullstyle";
+
+/*
+!-------------fonts----------------!
+*/
+
+
+@font-face {
+  font-family: 'Proxima Nova Regular';
+  src: url(../src/font/ProximaNovaRegular/ProximaNova-Regular.woff);
+}
+
+@font-face {
+  font-family: 'Proxima Nova Regular Italic';
+  src: url(../src/font/ProximaNovaRegularItalic/ProximaNova-RegularIt.woff);
+}
+
+@font-face {
+  font-family: 'Proxima Nova Semibold';
+  src: url(../src/font/ProximaNovaSemibold/ProximaNova-Semibold.ttf);
+}
+
+@font-face {
+  font-family: 'Proxima Nova Semibold Italic';
+  src: url(../src/font/ProximaNovaSemiboldItalic/ProximaNova-SemiboldIt.woff);
+}
+
+@font-face {
+  font-family: 'Proxima Nova Bold';
+  src: url(../src/font/ProximaNovaBold/ProximaNova-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'Gilroy Regular';
+  src: url(../src/font/GilroyRegular/Gilroy-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Gilroy Semibold';
+  src: url(../src/font/GilroySemibold/Gilroy-Semibold.ttf);
+}
+
+@font-face {
+  font-family: 'Nunito Sans Regular';
+  src: url(../src/font/NunitoSansRegular/NunitoSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Nunito Sans Semibold';
+  src: url(../src/font/NunitoSansSemibold/NunitoSans-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: 'Futura PT Heavy';
+  src: url(../src/font/FuturaPTHeavy/FuturaPT-Heavy.ttf);
+}
+
+@font-face {
+  font-family: 'Futura PT Book';
+  src: url(../src/font/FuturaPTBook/FuturaPT-Book.ttf);
+}
+
+@font-face {
+  font-family: 'Banana Brick';
+  src: url(../src/font/BananaBrick/Banana\ Brick.ttf);
+}
+/*
+!------------variables-------!
+*/
+@import '_variables';
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--bg-color-dark);
+}
