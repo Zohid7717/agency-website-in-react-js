@@ -1,4 +1,6 @@
 .header{
+  background: rgba(23, 25, 29, 0.7);
+  backdrop-filter: blur(1px);
   position: fixed;
   margin-top: 0px;
   display: flex;
@@ -6,12 +8,12 @@
   justify-content: center;
   top: 0;
   left: 0;
+  z-index: 100;
 
   &__wrapper{
-    border: 1px solid ;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 18px 0;
+    padding: 16.4px 0;
   }
 }

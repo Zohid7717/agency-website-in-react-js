@@ -9,12 +9,27 @@
     align-items: start;
     flex-direction: column;
     row-gap: 3px;
-    a{
+
+    a {
       color: var(--text-color-dark);
       transition: 0.4s ease-in-out;
-      &:hover{
+
+      &:hover {
         opacity: 0.7;
       }
     }
+  }
+}
+
+@media (max-width: 995px) {
+  .menu_aside {
+    &__contacts {
+      display: none;
+    }
+
+    &__orderBtn {
+      display: none;
+    }
+
   }
 }

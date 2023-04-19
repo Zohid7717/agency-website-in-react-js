@@ -5,13 +5,31 @@
   border-radius: 40px;
   font-size: 21px;
   gap: 12px;
-  &__light,
-  &__dark{
+  z-index: 0;
+  position: relative;
+
+  &__dark {
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 6.75px;
-    color: var(--text-color-dark);
+    border-radius: 50%;
+    z-index: 47;
+    position: relative;
+  }
+}
+
+@media (max-width: 995px) {
+  .themebtn {
+    width: 42px;
+    justify-content: center;
+    align-items: center;
+    &__light,
+    &__dark {
+      position: absolute;
+      background-color: #5454D4;
+    }
+   
   }
 }

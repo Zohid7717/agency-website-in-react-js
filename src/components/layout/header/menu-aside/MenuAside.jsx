@@ -11,7 +11,9 @@ const MenuAside = () => {
         <a href="tel:+998907777777">+998 90 777-77-77</a>
         <a href="mail:">chotatam@gmail.com</a>
       </div>
-      <OrderBtn/>
+      <div className={styles.menu_aside__orderBtn}>
+        <OrderBtn />
+      </div>
     </div>
   );
 }

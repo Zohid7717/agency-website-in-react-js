@@ -64,6 +64,7 @@
   font-family: 'Banana Brick';
   src: url(../src/font/BananaBrick/Banana\ Brick.ttf);
 }
+
 /*
 !------------variables-------!
 */
@@ -71,6 +72,89 @@
 
 body {
   min-width: 320px;
+  // min-height: 100vh;
+
+}
+
+.layout {
+  background-color: var(--bg-color-light);
   min-height: 100vh;
+  color: var(--text-color-light);
+
+  a {
+    color: var(--text-color-light);
+  }
+}
+
+.layout.dark {
   background-color: var(--bg-color-dark);
+  min-height: 100vh;
+  color: var(--text-color-dark);
+
+  a {
+    color: var(--text-color-dark);
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+
+.themebtn {
+
+  &__bg {
+    display: flex;
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    background-color: #5454D4;
+    border-radius: 50%;
+    top: 1px;
+    right: 48px;
+    z-index: 0;
+    transition: 0.4s ease-in-out;
+  }
+
+  &__bg.active {
+    right: 1px;
+  }
+
+  &__light {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6.75px;
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+  }
+
+  &__light.active {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6.75px;
+    border-radius: 50%;
+    z-index: 48;
+    position: relative;
+  }
+}
+
+@media (max-width: 995px) {
+  .themebtn {
+
+    &__bg {
+      display: none;
+    }
+
+    &__bg.active {
+      display: none;
+    }
+
+    &__light.active {
+      background-color: #5454D4;
+    }
+  }
 }

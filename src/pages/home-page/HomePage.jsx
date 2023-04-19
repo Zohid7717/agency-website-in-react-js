@@ -3,14 +3,20 @@ import styles from './HomePage.module.scss'
 import Contacts from './contacts/Contacts';
 import Services from './services/Services';
 import Portfolio from './portfolio/Portfolio';
+import Hero from './hero/Hero';
+import About from './about/About';
+import Main from '../../components/layout/main/Main';
 
 const Home = () => {
   return (
     <div className={styles.home}>
-      <h2 id='home'>home</h2>
-      <Portfolio />
-      <Services />
-      <Contacts/>
+      <Hero />
+      <Main>
+        <About />
+        <Portfolio />
+        <Services />
+        <Contacts />
+      </Main>
     </div>
   );
 }

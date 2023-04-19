@@ -1,0 +1,55 @@
+.about {
+  padding: 30px 45px 45px 45px;
+  background: rgba(23, 25, 29, 0.7);
+  backdrop-filter: blur(1px);
+  border-radius: 10px;
+
+  &__title {
+    font-family: 'Futura PT Heavy';
+    font-size: 50px;
+    line-height: 64px;
+  }
+
+  &__context {
+    display: flex;
+    margin: 20px 0 0 0;
+    justify-content: space-between;
+  }
+
+  &__left {
+    width: 570px;
+  }
+
+  &__left_1,
+  &__left_2 {
+    font-family: 'Futura PT Book';
+    font-size: 18px;
+    line-height: 140%;
+  }
+
+  &__right {
+    width: 570px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__right_item {
+    width: 270px;
+    text-align: center;
+  }
+
+  &__right_item_title {
+    font-family: 'Futura PT Heavy';
+    font-size: 50px;
+    line-height: 100%;
+    color: #6911AD;
+  }
+
+  &__right_item_text {
+    margin: 12px 0 0 0;
+    font-family: 'Futura PT Heavy';
+    font-size: 20px;
+    line-height: 26px;
+  }
+}

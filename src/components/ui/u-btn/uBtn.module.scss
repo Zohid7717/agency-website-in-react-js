@@ -1,0 +1,48 @@
+.uBtn {
+  display: inline-flex;
+  border-radius: 35px;
+  padding: 40px 29px 8px;
+  cursor: pointer;
+  position: relative;
+  height: 70px;
+  transition: 0.5s ease-in-out;
+
+  &:hover {
+    padding: 22px 29px;
+  }
+
+  &:hover>.uBtn__bg {
+    width: 100%;
+    padding: 22px 29px;
+  }
+
+  &__text {
+    font-family: 'Proxima Nova Bold';
+    font-size: 18px;
+    line-height: 22px;
+    color: #6911AD;
+    white-space: nowrap;
+  }
+
+  &__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 70px;
+    height: 100%;
+    background-color: #6911AD;
+    padding: 40px 29px 8px;
+    border-radius: 35px;
+    transition: 0.5s ease-in-out;
+
+  }
+
+  &__bg_text {
+    font-family: 'Proxima Nova Bold';
+    font-size: 18px;
+    line-height: 22px;
+    color: #fff;
+    white-space: nowrap;
+  }
+}
