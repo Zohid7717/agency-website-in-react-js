@@ -1,79 +1,92 @@
 {
-  "projectBase" : [
+  "projectBase": [
     {
-    "title": "UYMAKON",
-    "category": "Mobil ilova",
-    "image": "./images/projects-images/uymakon-mobil-ilova-min.jpg"
+      "id": 1,
+      "title": "UYMAKON",
+      "category": "Mobil ilova",
+      "image": "https://zakiy.asia/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fport1.b1cc775e.png&w=1080&q=75"
     },
     {
-    "title": "Eksport portali",
-    "category": "Veb sayt",
-    "image": "./images/projects-images/eksport-veb-sayt-min.jpg"
+      "id": 2,
+      "title": "Eksport portali",
+      "category": "Veb sayt",
+      "image": "https://static.oks.uz/uploads/MQ/RqGafFuZcj82zZSPvByPdYWnkW4bVa.png"
     },
     {
-    "title": "Eksport portali",
-    "category": "SMM",
-    "image": "./images/projects-images/eksport-mobil-ilova-min.jpg"
+      "id": 3,
+      "title": "Eksport portali",
+      "category": "SMM",
+      "image": "https://static.oks.uz/uploads/oj/UrTJ4WWwgWX4htimLQS5Q5iwZ2RFrY.png"
     },
     {
-    "title": "Kun.uz",
-    "category": "Mobil ilova",
-    "image": "./images/projects-images/kun-uz-mobil-ilova-min.jpg"
+      "id": 4,
+      "title": "Kun.uz",
+      "category": "Mobil ilova",
+      "image": "https://storage.kun.uz/source/8/HvrDTT1PpISqsTKjoNBzkyvPRYbetNc4.jpg"
     },
     {
-    "title": "Kun.uz",
-    "category": "Veb sayt",
-    "image": "./images/projects-images/kun-uz-veb-sayt-min.jpg"
+      "id": 5,
+      "title": "Kun.uz",
+      "category": "Veb sayt",
+      "image": "https://i.ytimg.com/vi/prQ0RUYIbKo/maxresdefault.jpg"
     },
     {
-    "title": "Zakovat",
-    "category": "SMM",
-    "image": "./images/projects-images/zakovat-veb-sayt-min.jpg"
+      "id": 6,
+      "title": "Zakovat",
+      "category": "SMM",
+      "image": "https://storage.kun.uz/source/7/G2jsLxbRAh7dZcYexnh5dyurc6EYSgnc.jpg"
     },
     {
-    "title": "Web Design",
-    "category": "Mobil ilova",
-    "image": "./images/projects-images/web-design-min.jpg"
+      "id": 7,
+      "title": "Web Design",
+      "category": "Mobil ilova",
+      "image": "https://cdn.dribbble.com/users/14159513/screenshots/20492675/media/8cef4ae69d1e94cd40e6457ecad4d771.png?compress=1&resize=400x300"
     },
     {
-    "title": "Web dev",
-    "category": "Veb sayt",
-    "image": "./images/projects-images/Latest-Web-Design-Trends-and-Standards-min.jpg"
+      "id": 8,
+      "title": "Web dev",
+      "category": "Veb sayt",
+      "image": "https://www.web-labs.kz/wp-content/uploads/2014/10/web-site2.jpg"
     },
     {
-    "title": "Web SMM",
-    "category": "SMM",
-    "image": "./images/projects-images/SMM marketing-min.jpg"
+      "id": 9,
+      "title": "Web SMM",
+      "category": "SMM",
+      "image": "https://blog.romi.center/wp-content/uploads/2020/07/smm-analiz.jpg"
     }
-  ], 
+  ],
   "newsBase": [
     {
-    "title": "«QA» mutaxassisi qanday bo'lishi kerak?",
-    "text": "🔥 Ma'lumki, «Najot Ta'lim»dagi kurslar qatoriga «QA», ya'ni «Dasturiy ta'minotni testlash» kursi ham qo'shilgan.",
-    "teg": "#hi_tech",
-    "date": "14:45 22/02/23",
-    "image": ""
+      "id": 1,
+      "title": "«QA» mutaxassisi qanday bo'lishi kerak?",
+      "text": "Men yosh QA muhandislaridan tez-tez eshitib turamanki, qo'lda test o'tkazish mashhurlik va unga bo'lgan talab bo'yicha avtomatlashtirilgan testdan ancha orqada qolgan. Bugun men ushbu mavzu bo'yicha mulohaza yuritmayman, aksincha, muhimligiga hech kim shubha qilmaydigan testcard avtomatlashtirishga e'tibor qarataman. “Yuqori tezlikda yuqori sifat” – bu kompaniyalar va mijozlar uchun yangi mantra. Bu oxirgi foydalanuvchilar yuqori sifatli mahsulotlarni olishlari kerakligini anglatadi, lekin avvalgidan ko'ra kamroq vaqt ichida. Bu mahsulotni bozorga chiqarish vaqtini qisqartirishning muhim qismidir. Qisman ushbu murakkab talabni qondirishga urinishlar tufayli biz sinovlarni avtomatlashtirishda ta'sirchan o'sishni ko'rmoqdamiz. Oxir oqibat, avtomatlashtirish QA guruhlariga test ishlarini tezroq va aniqroq bajarishga imkon beruvchi o'yinni o'zgartiruvchi bo'ldi. Regressiya testlari yoki har bir sprintda takrorlanadigan testlar avtomatlashtirish uchun eng mos nomzodlardir. Kodni tez-tez yangilash sinovlarni qo'lda bajarishga ketadigan vaqt va inson resurslari nuqtai nazaridan umumiy xarajatlarni oshiradi. Shu sababli, avtomatlashtirilgan testlarni ishlab chiqish bunday hollarda oqilona va samaraliroq tanlovdir. Endi savol qolmoqda: qaysi vosita saytingiz sinovini avtomatlashtirish uchun to'g'ri? U turli omillarga, jumladan, loyiha mazmuni va talablariga javob berishi kerak. Mavjud bo'lgan eng yaxshi vosita eng yaxshi sinov natijasiga olib kelishi shart emas. Asbob birinchi navbatda to'g'ri bo'lishi kerak. Ushbu postda men bozorda ko'plab vositalarni tanlashda sizga yordam berish uchun o'z nuqtai nazarimni bildirishga harakat qilaman. Har doim esda tutingki, barcha loyihalar uchun sinovni avtomatlashtirish talab qilinmaydi. Shuning uchun, avvalo o'z ehtiyojlaringizni aniqlang, saytlaringizni sinab ko'rish uchun avtomatlashtirish haqiqatan ham zarurligiga ishonch hosil qiling. O'zingizga quyidagi savollarni bering. Agar siz ularning ko'pchiligiga “ha” deb javob bersangiz, siz avtomatlashtirishga o'tishga tayyormiz. Sizda takroriy test holatlari ko'pmi? Qanchalik tez-tez regressiya testini o'tkazish kerak? Ishlash testlari uchun juda ko'p foydalanuvchilarni simulyatsiya qilish kerakmi? Foydalanuvchi interfeysi barqarormi? Ilovada sinash uchun faqat qo'lda testga tayanib bo'lmaydigan muhim xususiyatlar bormi? Bu sinovlarni avtomatlashtirish vositalarini tanlashning eng qiyin mezonlaridan biri. Ularni aniq aniqlash uchun QA mutaxassislari o'z loyihalarini yaxshi bilishlari kerak.",
+      "teg": "#hi_tech",
+      "date": "14:45 22/02/23",
+      "image": "https://civil.telegram-plus.com//channels/najottalim/4374_2023_03_10_1_.jpg"
     },
     {
-    "title": "120 nafar «Najot Ta'lim» o'quvchilariga bitiruv sertifikatlari topshirildi",
-    "text": "21-yanvar — shanba kuni «Najot Ta'lim» Chilonzor filialida navbatdagi bitiruv marosimi bo'lib o'tdi. Tadbir davomida Dasturlash, dizayn va marketing yo'nalishidagi kurslarni muvaffaqiyatli tamomlagan 120 nafar o'quvchilarga bitiruv sertifikatlari va umumiy qiymati 35'000'000 so'mdan ortiq bo'lgan ta'lim vaucherlari topshirildi.",
-    "teg": "#it-job",
-    "date": "14:45 21/01/23",
-    "image": ""
+      "id":2,
+      "title": "120 nafar «Najot Ta'lim» o'quvchilariga bitiruv sertifikatlari topshirildi",
+      "text": "24-fevral kuni IT Park Toshkent filialida IT Park direktori Farhod Ibragimov va tashkilotning rezident-eksportyor kompaniyalari o'rtasida uchrashuv bo'lib o'tdi. Tadbirning maqsadi – IT va BPO xizmatlari eksportining joriy holatini va O'zbekistonda IT eksportini oshirish choralarini muhokama qilishdan iborat. Uchrashuv davomida Farhod Zairovich eksportning joriy holatiga oid ayrim statistik ma'lumotlar bilan bo'lishdi. Shunday qilib, o'tgan yilgi ma'lumotlarga ko'ra, IT-xizmatlar eksporti hajmi $140 millionni tashkil etdi, eksportning qariyb 48 foizi dasturiy ta'minotni yaratuvchi kompaniyalariga to'g'ri keladi, 44 foizdan biroz ko'prog'i esa biznes jarayonlari autsorsingi bilan shug'ullanuvchi kompaniyalarga to'g'ri keladi. Bundan tashqari, eksportning 80% dan ziyodi AQSh bozoriga to'g'ri keladi, ammo boshqa ko'plab potensial bozorlar, jumladan Yevropa, Kanada va Sharq mamlakatlari mavjud. “Afsuski, eksportning asosiy qismi Toshkentdan amalga oshiriladi, demak, biz boshqa hududlardan ham eksportni yanada oshirishga e'tibor qaratishimiz kerak. Barchangizga ma'lumki, Prezident bizga IT-xizmatlar eksportini 300 million dollargacha oshirish vazifasini qo'ydi. Ishonchim komilki, birgalikdagi sa'y-harakatlarimiz va bilimlarimiz bilan eksportni oshirish bo'yicha samarali strategiyalarni ishlab chiqa olamiz va O'zbekistonda IT sohasi rivojiga o'z hissamizni qo'sha olamiz”, – dedi IT Park direktori. Hozirda IT Park Uzbekistan xalqaro moliya markazi hamda kompaniyalarga yangi mahsulot va xizmatlarni nazorat qilinadigan muhitda testdan o'tkazish imkonini beruvchi tartibga soluvchi sandbox yaratish ustida ishlamoqda. Bu xorijiy kompaniyalar uchun qulaylik va xavfsizlik darajasini ta'minlaydigan shartnomalar va kelishuvlar uchun ingliz huquqidan foydalanish imkoniyatini o'z ichiga oladi. Tashkilot, shuningdek, rezident eksport qiluvchi kompaniyalar uchun maxsus raqamli bankni ishlab chiqish jarayonida. U ularning ehtiyojlariga moslashtirilgan bir qator moliyaviy xizmatlarni, shu jumladan, xorijiy valyutasidagi hisoblar va raqamli to'lov tizimlarini taklif qiladi. Asosiy qism yakunida savol-javoblar sessiyasi boshlandi. Ayrim rezident kompaniyalar vakillari eksportdagi muvaffaqiyatlari bilan bo'lishdilar, shuningdek, birgalikdagi sa'y-harakatlar bilan qo'yilgan vazifaga qanday erishish mumkinligi bo'yicha takliflar bilan almashdilar. Bundan tashqari, kompaniyalar duch kelgan to'siqlar haqida gapirdilar. Xususan, relokatsiya paytidagi uy-joy muammosi va uy-joy narxining oshishi haqida so'z yuritildi. Takliflar qatorida bojxona rasmiylashtiruvi uchun imtiyozlar va xorijiy mamlakatlarga IT sohasidagi rasmiy tashriflarda ishtirok etish so'rovi bildirildi.",
+      "teg": "#it-job",
+      "date": "14:45 21/01/23",
+      "image": "https://cdn.najottalim.uz/najottalim/posts/images/c1909dba-c960-4971-b14a-578cd042ccb7.jpg"
     },
     {
-    "title": "«Najot Ta'lim» logosi haqida nimalarni bilasiz?",
-    "text": "«Najot Ta'lim» logosi Abstrac t logo mark turdagi logo hisoblanadi. Bu kabi logolarning ma'nosini bir martada ilg'ash qiyin bo'lishi mumkin.",
-    "teg": "#hi_tech",
-    "date": "14:45 22/02/23",
-    "image": ""
+      "id":3,
+      "title": "«Najot Ta'lim» logosi haqida nimalarni bilasiz?",
+      "text": "Muammo. Najot Ta'lim o'quv markaziga 2018-yilda asos solingan bo'lib, ular bizga murojaat etishgan vaqtda faqatgina o'quv markaz nomi va asosiy shiori bor edi. Ular asosan xorijiy tillar va zamonaviy kasblar bo'yicha o'quv kurslarini ochish niyatida ekanligini bildirishgan. Yechim. Biz Najot Ta'lim logotipini: “Dunyoda ilmdan boshqa najot yo'q va bo'lmagay” shioriga asoslagan holda ishlab chiqdek. U o'zida 4 - elementni, ya'ni: Kitob; Qayiqcha; Nilufar guli va “N” harfi va premium ranglarni birlashtirgan. O'quv markaz nomi ham ushbu shiordan kelib chiqgan. Logodan tashqari to'laqonli brend strategiyasini, zamonaviy o'quv dasturlari va marketing strategiyalarini ham ishlab chiqdik. Natija. Mufaqqiyatli marketing strategiyasi tufayli yoshlarda zamonaviy kasblarga bo'lgan qiziqish so'nggi 3 yil ichida keskin oshib ketdi. Biz tayyorlagan logotip O'quv kurslari orasida eng taniqlilaridan biri bo'lib, “zamonaviy kasblar” deganda ko'pchilikning ko'z oldiga ko'p holatda Najot Ta'lim logotipi keladi. Kitob. Aholining intellektual va ma'naviy-estetik ehtiyojini qondirish, yoshlarni mustaqil fikrlaydigan, mustahkam hayotiy pozitsiyaga ega, chinakam vatanparvar va ma'nan barkamol insonlarni tarbiyalashda kitobning o'rni beqiyosdir. Kema. «Dunyoda ilmdan boshqa najot yo'q va bo'lmagay». Muhaddislar sultoni, dunyo imomi – Imom Buxoriy bobomiz aytgan ushbu so'zlar tom ma'noda zamonaviy dunyoning shioriga aylandi. Zero Najot Ta'lim o'quv markazi hayotda o'z o'rnini topa olmayotgan yoshlarga xuddi Najot kemasidek yordam beradi. Nilufar. Nilufar qadimdan ko'plab sivilizatsiyalarda muqaddas hisoblangan va turli xil ma'nolarni anglatgan. Ulardan asosiylari o'sish, go'zallik, poklik, quyoshga va nurga intilish va boshqalar.  N harfi. Najot so'zining bosh va o'zbek alifbosining 13-harf",
+      "teg": "#hi_tech",
+      "date": "14:45 22/02/23",
+      "image": "https://marketing.uz/uploads/works/covers/8bd79c07ebc2619902f950153e9d40d6.jpg"
     },
     {
-    "title": "🙌 «TechJobs» kompaniyasi Java dasturchilarni maxsus «Deep interview»ga taklif qiladi!",
-    "text": "Intervyuda sizning oʻz sohangizdagi boʻshliqlaringiz, kamchiliklaringiz aniqlanib...",
-    "teg": "#hi_tech, #apple",
-    "date": "14:45 22/02/23",
-    "image": ""
+      "id":4,
+      "title": "🙌 «TechJobs» kompaniyasi Java dasturchilarni maxsus «Deep interview»ga taklif qiladi!",
+      "text": "Kun sayin zamonaviy kasblarga bo'lgan talab oshib bormoqda. Ayniqsa, bu kasblarni egallaganlar va ish beruvchilar o'rtasida bog'liqlikni yuzaga keltirish dolzarb mavzuga aylanmoqda. Sababi shuki, zamonaviy kasblarga talab katta, mutaxassis esa kam. Bu kasb bilan shug'ullanuvchi ishchilarga ish topish muammo bo'lmasligi va o'z darajasiga mos ishlarni topishiga qiynalmsliklaru uchun Techjobs kompaniyasi qayg'uradi. Kompaniya ish beruvchilar va ish so'rovchilar o'rtasida chorraha vazifasini bajaradi. Agar sizga ish kerak bo'lsa yoki ishchi kerak bo'lsa Techjobsga bemalol murojaat qilishingiz mumkin. Samara kerakmi? Techjobsdan qidiring!",
+      "teg": "#hi_tech, #apple",
+      "date": "14:45 22/02/23",
+      "image": "https://scontent.ftas2-2.fna.fbcdn.net/v/t1.6435-9/156173821_128819419171858_2560173515873980690_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=a26aad&_nc_ohc=0K64x2zmdo0AX_17IuF&_nc_ht=scontent.ftas2-2.fna&oh=00_AfBifiJ8C4G4slMoEWFsg2iuPxsODOYDGZYyASSBJUp05A&oe=646F4F96"
     }
   ]
 }

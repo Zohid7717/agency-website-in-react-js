@@ -1,12 +1,15 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { UContainer } from '../../../components/utils/Utils';
 import UBtn from '../../../components/ui/u-btn/uBtn';
 import styles from './Hero.module.scss'
-import hero_img from '../../../assets/images/hero_img.jpg'
+import hero_img from '../../../assets/images/hero_img.jpg';
+import cn from 'classnames';
+import { ThemeContext } from '../../../providers/ThemeProvider';
 
 const Hero = () => {
+  const {theme}=useContext(ThemeContext)
   return (
-    <div className={styles.hero}>
+    <div className={cn('hero', {dark: theme === 'dark'})}>
       <UContainer>
         <div className={styles.hero__wrapper}>
           <div className={styles.hero__contents}>

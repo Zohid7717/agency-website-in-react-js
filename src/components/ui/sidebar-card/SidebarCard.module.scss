@@ -1,0 +1,36 @@
+.sidebarcard {
+  width: 100%;
+  margin-bottom: 30px;
+  border-radius: 20px;
+  background: var(--theme-default-header);
+  border: 1px solid #4E4E4E;
+  backdrop-filter: blur(1px);
+  overflow: hidden;
+
+  &__img {
+    width: 100%;
+    position: relative;
+
+    &::before {
+      content: '';
+      display: block;
+      padding-top: 61.51%;
+    }
+
+    &>img {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      object-fit: cover;
+      object-position: center center;
+    }
+  }
+
+  &__title {
+    font-family: 'Proxima Nova Semibold';
+    font-size: 20px;
+    line-height: 24px;
+    padding: 15px 20px 25px 20px;
+  }
+}

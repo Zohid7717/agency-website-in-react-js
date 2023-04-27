@@ -158,3 +158,9 @@ body {
     }
   }
 }
+.hero {
+  background-image: url('../images/hero-bg-light.png');
+}
+.hero.dark {
+  background-image: url('../images/hero-bg.png');
+}

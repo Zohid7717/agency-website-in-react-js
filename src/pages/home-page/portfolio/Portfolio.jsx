@@ -1,10 +1,37 @@
-import React from 'react';
+import React, {useEffect} from 'react';
+import styles from './Portfolio.module.scss'
+import PortfolioItems from '../../../components/ui/portfolio-items/PortfolioItems';
+import { db } from '../../../../server/localDB';
+import { getApi } from '../../../components/utils/network';
+import CategoryMenu from '../../../components/ui/category-menu/CategoryMenu';
+import { useTheme } from '../../../providers/ThemeProvider';
+import UBtn from '../../../components/ui/u-btn/uBtn';
 
 const Portfolio = () => {
+  const { projectDB, setProjectDB } = useTheme()
+  const { changeCategory, setChangeCategory } = useTheme()
+  const maxCard = 6;
+  useEffect(() => {
+    const fetchData = async () => {
+      if (changeCategory) {
+        const data = await getApi.projectCategory(changeCategory)
+        setProjectDB(data)
+        console.log(projectDB)
+      } else {
+        const data = await getApi.project();
+        setProjectDB(data)
+      }
+    }
+    fetchData()
+    
+  }, [changeCategory])
+  
+
   return (
-    <div>
-      <h2 id='portfolio'>Portfolio</h2>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero blanditiis quis inventore sit, facilis ab ea, beatae perferendis soluta tempora deleniti atque ullam totam commodi cum maiores magnam dignissimos neque, animi consequuntur officiis! Et ad maiores nihil numquam explicabo labore, illo iure eveniet in dolor omnis mollitia harum, dicta doloremque molestias? Dolores asperiores a repellendus libero blanditiis tenetur architecto, voluptates eum deleniti nostrum, ea error vitae impedit amet ipsa similique molestiae voluptatibus dolor omnis? Quisquam dolorem unde commodi architecto cum voluptatum nulla illum dolore, excepturi doloremque saepe necessitatibus deserunt ab iste explicabo laudantium inventore obcaecati dolorum nesciunt magni quas in temporibus odit culpa. Animi maiores beatae error optio aliquid officia voluptates consequuntur, numquam, rem quibusdam sunt, quis similique! Temporibus nam maxime, sunt nemo placeat veniam sit fugit nobis corporis, distinctio, possimus dignissimos! Velit accusantium quae rem odit sed. Quia fugiat eius doloribus voluptate voluptatibus. Natus repellendus saepe culpa nisi fugit ducimus nobis, libero amet, nam ut magni cupiditate corporis consequuntur impedit at laborum blanditiis! Aut nemo tempora expedita vitae provident accusantium, ducimus fuga, incidunt, maxime doloribus adipisci. Iusto repudiandae reiciendis ipsa fugit alias illum ipsam? Officia ipsum soluta quasi doloremque vitae eaque tenetur saepe enim voluptate sint quidem nesciunt ad nisi doloribus, magnam obcaecati excepturi voluptates praesentium? Cumque eligendi voluptatem illo beatae temporibus optio. Temporibus nulla, sequi vel ipsum alias officia deserunt saepe nisi numquam! Eos delectus cumque accusantium alias saepe laboriosam ad atque, nobis, veniam aliquam, sapiente neque fugit aut excepturi odit minima eius ipsam. Soluta cum dicta earum totam et placeat aut, voluptatem voluptatibus pariatur odio quasi voluptate illo praesentium explicabo molestiae illum omnis neque eum quidem corporis at numquam expedita. Doloribus velit blanditiis possimus placeat. Possimus delectus deleniti earum omnis est et expedita esse sint perferendis? Atque temporibus rem, fugiat hic mollitia quae, animi libero vero ipsam nam praesentium error voluptatum? Voluptatibus quisquam voluptate cum perspiciatis libero nemo eius deleniti debitis quibusdam itaque? Pariatur suscipit accusantium nesciunt voluptatibus, deserunt officiis in. Reprehenderit provident perferendis incidunt deserunt rem soluta, explicabo nobis libero commodi suscipit magni minima in enim eius pariatur molestias. Ratione quibusdam aperiam, ducimus laborum libero numquam voluptatum odio nam. Tempora ratione atque explicabo facere eligendi accusamus, aut repellat fuga officia optio, esse sint quidem amet quibusdam alias, voluptas quam laborum? Exercitationem aliquam nobis rerum architecto quas accusantium repellat quasi aut, incidunt et quos, dolorem corporis, impedit ipsum? Officiis repellat consequuntur sapiente saepe aut laborum ex nihil autem? Porro, voluptatibus? Vero recusandae explicabo error similique ex sint minima illo laudantium unde quibusdam in minus tenetur qui aliquam sapiente, cum omnis quos, excepturi libero eum, nesciunt optio. Totam laborum atque, eligendi beatae perferendis, consequatur alias minus iste minima ex assumenda nihil quia sed harum quisquam ea accusantium similique id, voluptatem libero culpa est nemo. Assumenda unde tenetur, culpa consequuntur optio exercitationem harum recusandae incidunt temporibus pariatur cupiditate ratione reiciendis architecto voluptas magnam corporis dolores error. Cum architecto eligendi consequatur repudiandae id blanditiis, deserunt ipsa at accusantium similique quasi nihil quidem aspernatur, autem deleniti. Inventore quam voluptatem necessitatibus earum!</p>
+    <div id='portfolio' className={styles.portfolio}>
+      <CategoryMenu />
+      <PortfolioItems projectDB={projectDB} maxCard={maxCard} />
+      <UBtn text={'Barchasini ko`rish'}/>
     </div>
   );
 }

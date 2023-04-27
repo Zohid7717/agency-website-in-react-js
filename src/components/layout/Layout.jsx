@@ -1,12 +1,12 @@
 import React, { useContext } from 'react';
-import styles from './Layout.module.scss'
 import { ThemeContext } from '../../providers/ThemeProvider';
 import cn from 'classnames'
+import styles from './Layout.module.scss'
 
 const Layout = ({ children }) => {
-  const {isDark}=useContext(ThemeContext)
+  const {theme}=useContext(ThemeContext)
   return (
-    <div className={cn('layout', {dark: isDark})}>
+    <div className={cn('layout', {dark: theme === 'dark'})}>
       {children}
     </div>
   );

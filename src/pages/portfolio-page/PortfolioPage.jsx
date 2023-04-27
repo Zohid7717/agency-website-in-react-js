@@ -1,12 +1,11 @@
 import React from 'react';
-import styles from './PortfolioPage.module.scss'
 
-const Portfolio = () => {
+const PortfolioPage = () => {
   return (
     <div>
-      portfolio page
+      portfoliopage
     </div>
   );
 }
 
-export default Portfolio;
+export default PortfolioPage;

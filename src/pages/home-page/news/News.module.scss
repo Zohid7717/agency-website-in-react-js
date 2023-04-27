@@ -1,0 +1,14 @@
+.carousel {
+  margin: 120px 0px 0px 0px;
+  position: relative;
+  padding: 0px 50px 0px 50px;
+  
+
+  &__title {
+    margin-bottom: 36px;
+    font-family: 'Proxima Nova Bold';
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+  }
+}

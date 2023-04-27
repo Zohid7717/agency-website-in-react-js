@@ -1,6 +1,8 @@
 import React from 'react';
 import styles from './About.module.scss'
-import { UContainer } from '../../../components/utils/Utils';
+import target from '../../../assets/images/advantage_target.svg'
+import chart from '../../../assets/images/advantage_chart.svg'
+import racket from '../../../assets/images/advantage_racket.svg'
 
 const About = () => {
   return (
@@ -38,7 +40,41 @@ const About = () => {
           </div>
         </div>
       </div>
-      
+      <div className={styles.advantage}>
+        <h2 className={styles.advantage__title}>Bizning afzalliklarimiz</h2>
+        <ul className={styles.advantage__items}>
+          <li className={styles.advantage__item}>
+            <img src={target} alt="target" className={styles.advantage__item_img} />
+            <h3 className={styles.advantage__item_title}>Individual yondashuv</h3>
+            <p className={styles.advantage__item_text}>Biz har bir mijozga g'amxo'rlik qilamiz va ularning ehtiyojlariga javob beradigan echimlarni yaratamiz</p>
+          </li>
+          <li className={styles.advantage__item}>
+            <img src={chart} alt="chart" className={styles.advantage__item_img} />
+            <h3 className={styles.advantage__item_title}>Ekspertiza</h3>
+            <p className={styles.advantage__item_text}>Biz har bir mijozga g'amxo'rlik qilamiz va ularning ehtiyojlariga javob beradigan echimlarni yaratamiz</p>
+          </li>
+          <li className={styles.advantage__item}>
+            <img src={racket} alt="" className={styles.advantage__item_img} />
+            <h3 className={styles.advantage__item_title}>Professional xizmat</h3>
+            <p className={styles.advantage__item_text}>Biz har bir mijozga g'amxo'rlik qilamiz va ularning ehtiyojlariga javob beradigan echimlarni yaratamiz</p>
+          </li>
+          <li className={styles.advantage__item}>
+            <img src={target} alt="target" className={styles.advantage__item_img} />
+            <h3 className={styles.advantage__item_title}>Individual yondashuv</h3>
+            <p className={styles.advantage__item_text}>Biz har bir mijozga g'amxo'rlik qilamiz va ularning ehtiyojlariga javob beradigan echimlarni yaratamiz</p>
+          </li>
+          <li className={styles.advantage__item}>
+            <img src={chart} alt="chart" className={styles.advantage__item_img} />
+            <h3 className={styles.advantage__item_title}>Ekspertiza</h3>
+            <p className={styles.advantage__item_text}>Biz har bir mijozga g'amxo'rlik qilamiz va ularning ehtiyojlariga javob beradigan echimlarni yaratamiz</p>
+          </li>
+          <li className={styles.advantage__item}>
+            <img src={racket} alt="" className={styles.advantage__item_img} />
+            <h3 className={styles.advantage__item_title}>Professional xizmat</h3>
+            <p className={styles.advantage__item_text}>Biz har bir mijozga g'amxo'rlik qilamiz va ularning ehtiyojlariga javob beradigan echimlarni yaratamiz</p>
+          </li>
+        </ul>
+      </div>
     </>
   );
 }

@@ -21,6 +21,7 @@ function App() {
               <Route path='/' element={<Home />} />
               <Route path='/portfolioPage' element={<PortfolioPage />} />
               <Route path='/NewsPage' element={<NewsPage />} />
+              <Route path='/NewsPage/:id' element={<NewsPage/>}/>
               <Route path='*' element={<NotFound />} />
             </Routes>
           </div>

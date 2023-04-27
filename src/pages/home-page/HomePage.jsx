@@ -6,8 +6,10 @@ import Portfolio from './portfolio/Portfolio';
 import Hero from './hero/Hero';
 import About from './about/About';
 import Main from '../../components/layout/main/Main';
+import News from './news/News';
 
 const Home = () => {
+  const qtyCard = 6;
   return (
     <div className={styles.home}>
       <Hero />
@@ -15,6 +17,7 @@ const Home = () => {
         <About />
         <Portfolio />
         <Services />
+        <News/>
         <Contacts />
       </Main>
     </div>

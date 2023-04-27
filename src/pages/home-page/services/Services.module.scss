@@ -1,0 +1,49 @@
+.services {
+  margin: 120px 0 0 0;
+  background: var(--theme-default-header);
+  border: 1px solid #4E4E4E;
+  backdrop-filter: blur(1px);
+  border-radius: 20px;
+  padding: 40px 20px;
+
+  &__title {
+    font-family: 'Proxima Nova Bold';
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+  }
+
+  &__items {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 384px;
+    padding: 48px 42px;
+    text-align: center;
+  }
+
+  &__item_title {
+    font-family: 'Nunito Sans Semibold';
+    font-size: 28px;
+    line-height: 38px;
+    text-align: center;
+    letter-spacing: -0.750316px;
+  }
+
+  &__item_text {
+    font-family: 'Nunito Sans Regular';
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: -0.500211px;
+  }
+}

@@ -1,0 +1,37 @@
+.newspage{
+  margin-top: 40px;
+  display: flex;
+  gap: 30px;
+  &__main{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 74.46vw;
+    &>img{
+      width: 100%;
+      border-radius: 20px;
+      border: 1px solid #4E4E4E;
+    }
+  }
+  &__sidebar{
+    width: 23.32vw;
+  }
+  &__x_slider{
+    display: none;
+    padding: 0 35px;
+  }
+}
+@media (max-width: 1000px){
+  .newspage{
+    flex-direction: column;
+    &__main{
+      width: 100%;
+    }
+    &__sidebar{
+      display: none;
+    }
+    &__x_slider{
+      display: block;
+    }
+  }
+}

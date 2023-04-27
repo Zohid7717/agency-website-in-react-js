@@ -1,7 +1,13 @@
-:root{
-  --text-color-light: #000 ;
+:root {
+  --text-color-light: #000;
   --text-color-dark: #fff;
-  
+
   --bg-color-light: #a5a3a3;
   --bg-color-dark: #1e1e1e;
+
+  --theme-default-header: var(--theme-light-header);
+
+  --theme-light-header: rgba(76, 82, 95, 0.7);
+  --theme-dark-header: rgba(23, 25, 29, 0.7);
+
 }

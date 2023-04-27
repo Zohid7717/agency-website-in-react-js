@@ -1,5 +1,5 @@
 .hero {
-  background-image: url('../../../assets/images/hero-bg.png');
+  // background-image: var(--theme-default-bg-hero);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 0px 0px 60px 0px;
@@ -14,9 +14,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 90px 0 0 0;
     padding: 30px 45px 45px 45px;
-    background: rgba(76, 82, 95, 0.7);
+    background: var(--theme-default-header);
     backdrop-filter: blur(1px);
     border-radius: 10px;
   }
@@ -86,4 +85,11 @@
     }
 
   }
+}
+.hero {
+  background-image: url('../images/hero-bg-light.png');
+}
+
+.hero.dark {
+  background-image: url('../images/hero-bg.png');
 }
