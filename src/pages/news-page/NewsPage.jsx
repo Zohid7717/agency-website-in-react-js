@@ -3,10 +3,9 @@ import Main from '../../components/layout/main/Main'
 import styles from './NewsPage.module.scss'
 import newsImg from '../../assets/images/newspage_main_image.jpg';
 import NewCard from '../../components/ui/new-card/NewCard';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { NewsData, getApi } from '../../components/utils/network';
 import Sidebar from '../../components/ui/sidebar/Sidebar';
-import { useTheme } from '../../providers/ThemeProvider';
 import SidebarCard from '../../components/ui/sidebar-card/SidebarCard';
 import PauseOnHover from '../../components/ui/carousel/Carousel';
 import NewsCard from '../../components/ui/news-card/NewsCard';
@@ -33,14 +32,16 @@ const NewsPage = () => {
         <div className={styles.newspage__sidebar}>
           <Sidebar>
             {NewsData().map(item =>
-              <SidebarCard/>
-              )}
+              <SidebarCard />
+            )}
           </Sidebar>
         </div>
         <div className={styles.newspage__x_slider}>
           <PauseOnHover >
             {NewsData().map(item =>
-              <NewsCard key={item.id} id={item.id} image={item.image} title={item.title} text={item.text} teg={item.teg} date={item.date} />
+              <Link to={`/NewsPage/${item.id}`}>
+                <NewsCard key={item.id} id={item.id} image={item.image} title={item.title} text={item.text} teg={item.teg} date={item.date} />
+              </Link>
             )}
           </PauseOnHover>
         </div>

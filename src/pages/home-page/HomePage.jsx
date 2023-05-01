@@ -7,6 +7,7 @@ import Hero from './hero/Hero';
 import About from './about/About';
 import Main from '../../components/layout/main/Main';
 import News from './news/News';
+import Form from './form/Form';
 
 const Home = () => {
   const qtyCard = 6;
@@ -19,6 +20,7 @@ const Home = () => {
         <Services />
         <News/>
         <Contacts />
+        <Form/>
       </Main>
     </div>
   );
