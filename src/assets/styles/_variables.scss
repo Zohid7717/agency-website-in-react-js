@@ -10,4 +10,7 @@
   --theme-light-header: rgba(76, 82, 95, 0.7);
   --theme-dark-header: rgba(23, 25, 29, 0.7);
 
+  --theme-default-inputStyle: var(--theme-light-inputStyle);
+  --theme-light-inputStyle: #272727;
+  --theme-dark-inputStyle: #AAAAAA;
 }

@@ -16,7 +16,14 @@ export const ThemeProvider = ({ children, ...props }) => {
     changeCSSVariables(name);
   }
   return (
-    <ThemeContext.Provider value={{ theme, change, projectDB, setProjectDB, changeCategory, setChangeCategory}} {...props}>
+    <ThemeContext.Provider value={{
+      theme,
+      change,
+      projectDB,
+      setProjectDB,
+      changeCategory,
+      setChangeCategory
+    }} {...props}>
       {children}
     </ThemeContext.Provider>
   )

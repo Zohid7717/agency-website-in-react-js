@@ -1,0 +1,150 @@
+.form {
+  margin-top: 120px;
+  padding: 60px 80px;
+  display: flex;
+  background: var(--theme-default-header);
+  backdrop-filter: blur(1px);
+  border-radius: 20px;
+
+  &__left {
+    max-width: 640px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  &__title {
+    font-family: 'Proxima Nova Regular Italic';
+    font-size: 32px;
+    line-height: 39px;
+    margin-bottom: 15px;
+  }
+
+  &__name,
+  &__number,
+  &__idea {
+    color: var(--theme-default-inputStyle);
+    border-bottom: 1px solid var(--theme-default-inputStyle);
+    width: 78%;
+    font-family: 'Proxima Nova Regular';
+    font-size: 17px;
+    line-height: 21px;
+    background-color: transparent;
+    padding-bottom: 8px;
+  }
+
+  &__desired_services {
+    font-family: 'Proxima Nova Bold';
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  &__checkbox_wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 30px;
+  }
+
+  &__checkbox_label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-family: 'Proxima Nova Bold';
+    font-size: 18px;
+    line-height: 22px;
+    gap: 10px;
+  }
+
+  &__checkbox_icon {
+    display: flex;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--theme-default-inputStyle);
+    border-radius: 4px;
+    padding: 1px;
+    
+  }
+
+  &__checkbox_input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+  }
+
+  &__right{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  &__right_main {
+    border-radius: 10px;
+    background: rgba(83, 83, 83, 0.1);
+    box-shadow: 20px 20px 40px rgba(241, 216, 253, 0.08);
+    backdrop-filter: blur(2px);
+    padding: 40px 60px 50px 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  &__right_title {
+    text-align: center;
+    font-family: 'Proxima Nova Bold';
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  &__right_choice {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 66px;
+    justify-content: center;
+  }
+
+  &__right_label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    font-family: 'Proxima Nova Bold';
+    font-size: 24px;
+    line-height: 29px;
+    gap: 10px;
+    width: 150px;
+    height: 189px;
+  }
+  &__right_img{
+    border-radius: 50%;
+    transition: 0.4s ease-in-out;
+  }
+
+  &__right_input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+  }
+}
+.form__checkbox_icon::after {
+  content: "";
+  width: 14px;
+  height: 14px;
+  background-color: transparent;
+  border-radius: 4px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.4s ease-in-out;
+}
+.form__checkbox_input:checked+.form__checkbox_icon::after {
+  background-color: var(--theme-default-inputStyle);
+}
+.form__right_input:checked+.form__right_img{
+  box-shadow: 0px 0px 20px blue;
+}

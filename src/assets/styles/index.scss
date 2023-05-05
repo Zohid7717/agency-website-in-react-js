@@ -158,9 +158,18 @@ body {
     }
   }
 }
+
 .hero {
   background-image: url('../images/hero-bg-light.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  // background-position: center;
 }
+
 .hero.dark {
   background-image: url('../images/hero-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
+
